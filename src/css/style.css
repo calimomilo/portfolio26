@@ -1,0 +1,111 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'PP Mori';
+  src:
+    local('PPMori-Black'),
+    url('../fonts/PPMori-Black.otf') format('otf');
+  font-weight: bolder;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Mori';
+  src:
+    local('PPMori-BlackItalic'),
+    url('../fonts/PPMori-BlackItalic.otf') format('otf');
+  font-weight: bolder;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Mori';
+  src:
+    local('PPMori-ExtraLight'),
+    url('../fonts/PPMori-ExtraLight.otf') format('otf');
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Mori';
+  src:
+    local('PPMori-ExtraLightItalic'),
+    url('../fonts/PPMori-ExtraLightItalic.otf') format('otf');
+  font-weight: lighter;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Mori';
+  src:
+    local('PPMori-Regular'),
+    url('../fonts/PPMori-Regular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Mori';
+  src:
+    local('PPMori-Italic'),
+    url('../fonts/PPMori-Italic.otf') format('otf');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Mori';
+  src:
+    local('PPMori-Semibold'),
+    url('../fonts/PPMori-Semibold.otf') format('otf');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Mori';
+  src:
+    local('PPMori-SemiboldItalic'),
+    url('../fonts/PPMori-SemiboldItalic.otf') format('otf');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme inline {
+  --font-ppmori:
+    'PP Mori', Instrument Sans, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --color-mindaro-50: #fafcea;
+  --color-mindaro-100: #f1f8cc;
+  --color-mindaro-200: #dfee87;
+  --color-mindaro-300: #d6e865;
+  --color-mindaro-400: #c8dd38;
+  --color-mindaro-500: #b5c822;
+  --color-mindaro-600: #9aa619;
+  --color-mindaro-700: #7d8217;
+  --color-mindaro-800: #686a19;
+  --color-mindaro-900: #5b5b1a;
+  --color-mindaro-950: #33330b;
+
+  --color-neutral-50: #f6f4f0;
+  --color-neutral-100: #e9e4d8;
+  --color-neutral-200: #d5c9b3;
+  --color-neutral-300: #bda987;
+  --color-neutral-400: #aa8d65;
+  --color-neutral-500: #9b7c57;
+  --color-neutral-600: #856449;
+  --color-neutral-700: #6b4e3d;
+  --color-neutral-800: #5b4338;
+  --color-neutral-900: #503a33;
+  --color-neutral-950: #231815;
+}
