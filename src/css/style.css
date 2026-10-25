@@ -2,9 +2,7 @@
 
 @font-face {
   font-family: 'PP Mori';
-  src:
-    local('PPMori-Black'),
-    url('../fonts/PPMori-Black.otf') format('otf');
+  src: local('../fonts/PPMori-Black.otf') format('otf');
   font-weight: bolder;
   font-style: normal;
   font-display: swap;
@@ -12,9 +10,7 @@
 
 @font-face {
   font-family: 'PP Mori';
-  src:
-    local('PPMori-BlackItalic'),
-    url('../fonts/PPMori-BlackItalic.otf') format('otf');
+  src: local('../fonts/PPMori-BlackItalic.otf') format('otf');
   font-weight: bolder;
   font-style: italic;
   font-display: swap;
@@ -22,9 +18,7 @@
 
 @font-face {
   font-family: 'PP Mori';
-  src:
-    local('PPMori-ExtraLight'),
-    url('../fonts/PPMori-ExtraLight.otf') format('otf');
+  src: local('../fonts/PPMori-ExtraLight.otf') format('otf');
   font-weight: lighter;
   font-style: normal;
   font-display: swap;
@@ -32,9 +26,7 @@
 
 @font-face {
   font-family: 'PP Mori';
-  src:
-    local('PPMori-ExtraLightItalic'),
-    url('../fonts/PPMori-ExtraLightItalic.otf') format('otf');
+  src: local('../fonts/PPMori-ExtraLightItalic.otf') format('otf');
   font-weight: lighter;
   font-style: italic;
   font-display: swap;
@@ -42,9 +34,7 @@
 
 @font-face {
   font-family: 'PP Mori';
-  src:
-    local('PPMori-Regular'),
-    url('../fonts/PPMori-Regular.otf') format('otf');
+  src: local('../fonts/PPMori-Regular.otf') format('otf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -52,9 +42,7 @@
 
 @font-face {
   font-family: 'PP Mori';
-  src:
-    local('PPMori-Italic'),
-    url('../fonts/PPMori-Italic.otf') format('otf');
+  src: local('../fonts/PPMori-Italic.otf') format('otf');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -62,9 +50,7 @@
 
 @font-face {
   font-family: 'PP Mori';
-  src:
-    local('PPMori-Semibold'),
-    url('../fonts/PPMori-Semibold.otf') format('otf');
+  src: local('../fonts/PPMori-Semibold.otf') format('otf');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -72,9 +58,7 @@
 
 @font-face {
   font-family: 'PP Mori';
-  src:
-    local('PPMori-SemiboldItalic'),
-    url('../fonts/PPMori-SemiboldItalic.otf') format('otf');
+  src: local('../fonts/PPMori-SemiboldItalic.otf') format('otf');
   font-weight: bold;
   font-style: italic;
   font-display: swap;

@@ -1,7 +1,10 @@
-<script setup></script>
+<script setup>
+import { RouterView } from 'vue-router';
+
+</script>
 
 <template>
-  <h1>Portfolio 26 ig</h1>
+  <RouterView></RouterView>
 </template>
 
 <style scoped></style>
