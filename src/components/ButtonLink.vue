@@ -1,7 +1,9 @@
 <script setup>
 import IconSwitcher from '@/svgs/IconSwitcher.vue';
+import { RouterLink } from 'vue-router';
 
 const props = defineProps({
+    to: String,
     leadingIcon: String,
     trailingIcon: String,
     selected: Boolean,
@@ -10,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="group hover:cursor-pointer flex w-fit min-h-11 gap-2 py-2 ps-2 pe-1">
+    <RouterLink :to="props.to" class="group hover:cursor-pointer flex w-fit min-h-11 gap-2 py-2 ps-2 pe-1">
         <IconSwitcher :icon="props.leadingIcon" class="fill-neutral-950" :class="[
             big? 'w-6' : 'w-5',
             selected? 'hidden' : ' group-hover:fill-primary-900 group-active:fill-primary-700'
@@ -23,5 +25,5 @@ const props = defineProps({
             big? 'w-6' : 'w-5',
             selected? 'hidden' : 'group-hover:fill-primary-900 group-active:fill-primary-700'
             ]"></IconSwitcher>
-    </div>
+    </RouterLink>
 </template>
