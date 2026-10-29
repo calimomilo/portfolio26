@@ -1,0 +1,27 @@
+<script setup>
+import IconSwitcher from '@/svgs/IconSwitcher.vue';
+
+const props = defineProps({
+    leadingIcon: String,
+    trailingIcon: String,
+    selected: Boolean,
+    big: Boolean
+})
+</script>
+
+<template>
+    <div class="group hover:cursor-pointer flex w-fit min-h-11 gap-2 py-2 ps-2 pe-1">
+        <IconSwitcher :icon="props.leadingIcon" class="fill-neutral-950" :class="[
+            big? 'w-6' : 'w-5',
+            selected? 'hidden' : ' group-hover:fill-primary-900 group-active:fill-primary-700'
+            ]"></IconSwitcher>
+        <p class="font-ppmori font-semibold text-neutral-950" :class="[
+            big? 'text-xl' : 'text-base',
+            selected? 'italic underline decoration-[0.1rem] underline-offset-[0.4rem]' : 'group-hover:text-primary-900 group-hover:italic group-hover:underline group-hover:decoration-[0.1rem] group-hover:underline-offset-[0.4rem] group-active:text-primary-700 group-active:italic group-active:underline group-active:decoration-[0.1rem] group-active:underline-offset-[0.4rem]'
+            ]"><slot></slot></p>
+        <IconSwitcher :icon="props.trailingIcon" class="fill-neutral-950" :class="[
+            big? 'w-6' : 'w-5',
+            selected? 'hidden' : 'group-hover:fill-primary-900 group-active:fill-primary-700'
+            ]"></IconSwitcher>
+    </div>
+</template>

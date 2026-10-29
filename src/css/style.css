@@ -3,7 +3,7 @@
 @font-face {
   font-family: 'PP Mori';
   src: local('../fonts/PPMori-Black.otf') format('otf');
-  font-weight: bolder;
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -11,7 +11,7 @@
 @font-face {
   font-family: 'PP Mori';
   src: local('../fonts/PPMori-BlackItalic.otf') format('otf');
-  font-weight: bolder;
+  font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
@@ -19,7 +19,7 @@
 @font-face {
   font-family: 'PP Mori';
   src: local('../fonts/PPMori-ExtraLight.otf') format('otf');
-  font-weight: lighter;
+  font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
@@ -27,7 +27,7 @@
 @font-face {
   font-family: 'PP Mori';
   src: local('../fonts/PPMori-ExtraLightItalic.otf') format('otf');
-  font-weight: lighter;
+  font-weight: 200;
   font-style: italic;
   font-display: swap;
 }
@@ -35,7 +35,7 @@
 @font-face {
   font-family: 'PP Mori';
   src: local('../fonts/PPMori-Regular.otf') format('otf');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -43,7 +43,7 @@
 @font-face {
   font-family: 'PP Mori';
   src: local('../fonts/PPMori-Italic.otf') format('otf');
-  font-weight: normal;
+  font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
@@ -51,7 +51,7 @@
 @font-face {
   font-family: 'PP Mori';
   src: local('../fonts/PPMori-Semibold.otf') format('otf');
-  font-weight: bold;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -59,7 +59,7 @@
 @font-face {
   font-family: 'PP Mori';
   src: local('../fonts/PPMori-SemiboldItalic.otf') format('otf');
-  font-weight: bold;
+  font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
