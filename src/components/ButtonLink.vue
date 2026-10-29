@@ -15,7 +15,7 @@ const props = defineProps({
     <RouterLink :to="props.to" class="group hover:cursor-pointer flex w-fit min-h-11 gap-2 py-2 ps-2 pe-1">
         <IconSwitcher :icon="props.leadingIcon" class="fill-neutral-950" :class="[
             big? 'w-6' : 'w-5',
-            selected? 'hidden' : ' group-hover:fill-primary-900 group-active:fill-primary-700'
+            selected? 'hidden' : 'group-hover:fill-primary-900 group-active:fill-primary-700'
             ]"></IconSwitcher>
         <p class="font-ppmori font-semibold text-neutral-950" :class="[
             big? 'text-xl' : 'text-base',

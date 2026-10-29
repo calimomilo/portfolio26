@@ -9,5 +9,11 @@ export default {
       about: 'About me',
       projects: 'My work',
     },
+    socials: {
+      cta: 'Get in touch !',
+      mail: 'Email',
+      linkedin: 'LinkedIn',
+      github: 'GitHub',
+    },
   },
 }

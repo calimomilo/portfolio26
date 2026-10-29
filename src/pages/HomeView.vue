@@ -2,6 +2,7 @@
 import BurstSvg from '@/svgs/BurstSvg.vue';
 import texts from '@/data/texts';
 import ButtonLink from '@/components/ButtonLink.vue';
+import SocialsLink from '@/components/SocialsLink.vue';
 
 </script>
 
@@ -19,5 +20,6 @@ import ButtonLink from '@/components/ButtonLink.vue';
       <ButtonLink to="/about" trailing-icon="right_arrow">{{ texts.eng.nav.about }}</ButtonLink>
       <ButtonLink to="/projects" trailing-icon="right_arrow">{{ texts.eng.nav.projects }}</ButtonLink>
     </div>
+    <SocialsLink></SocialsLink>
   </section>
 </template>
