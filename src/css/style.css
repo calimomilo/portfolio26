@@ -81,6 +81,18 @@
   --color-mindaro-900: #5b5b1a;
   --color-mindaro-950: #33330b;
 
+  --color-primary-50: var(--color-mindaro-50);
+  --color-primary-100: var(--color-mindaro-100);
+  --color-primary-200: var(--color-mindaro-200);
+  --color-primary-300: var(--color-mindaro-300);
+  --color-primary-400: var(--color-mindaro-400);
+  --color-primary-500: var(--color-mindaro-500);
+  --color-primary-600: var(--color-mindaro-600);
+  --color-primary-700: var(--color-mindaro-700);
+  --color-primary-900: var(--color-mindaro-900);
+  --color-primary-800: var(--color-mindaro-800);
+  --color-primary-950: var(--color-mindaro-950);
+
   --color-neutral-50: #f6f4f0;
   --color-neutral-100: #e9e4d8;
   --color-neutral-200: #d5c9b3;
