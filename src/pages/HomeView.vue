@@ -17,8 +17,8 @@ import SocialsLink from '@/components/SocialsLink.vue';
     </div>
 
     <div class="flex flex-col w-fit -ms-2 md:ms-0 md:shrink-0 md:grow-5 md:gap-4">
-      <ButtonLink to="/about" trailing-icon="right_arrow" big>{{ texts.eng.nav.about }}</ButtonLink>
-      <ButtonLink to="/projects" trailing-icon="right_arrow" big>{{ texts.eng.nav.projects }}</ButtonLink>
+      <ButtonLink to="/about" trailing-icon="right_arrow" big>{{ texts.eng.about.title }}</ButtonLink>
+      <ButtonLink to="/projects" trailing-icon="right_arrow" big>{{ texts.eng.projects.title }}</ButtonLink>
     </div>
     
     <SocialsLink class="absolute max-md:inset-x-0 max-md:bottom-[20vh] -rotate-4 md:rotate-0 md:right-12 md:bottom-8"></SocialsLink>
