@@ -1,5 +1,10 @@
-<script setup></script>
+<script setup>
+import SideNavLayout from '@/layouts/SideNavLayout.vue';
+
+</script>
 
 <template>
-  <h1 class="text-neutral-950">Projects</h1>
+  <SideNavLayout selected="projects">
+
+  </SideNavLayout>
 </template>

@@ -16,7 +16,7 @@ import SocialsLink from '@/components/SocialsLink.vue';
       <p class="text-xl/[130%] -mt-1 md:text-4xl/[130%] md:max-w-150">{{ texts.eng.home['home-end'] }}</p>
     </div>
 
-    <div class="flex flex-col w-fit -ms-2 md:ms-0 md:shrink-0 md:grow-5">
+    <div class="flex flex-col w-fit -ms-2 md:ms-0 md:shrink-0 md:grow-5 md:gap-4">
       <ButtonLink to="/about" trailing-icon="right_arrow" big>{{ texts.eng.nav.about }}</ButtonLink>
       <ButtonLink to="/projects" trailing-icon="right_arrow" big>{{ texts.eng.nav.projects }}</ButtonLink>
     </div>
