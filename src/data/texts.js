@@ -2,7 +2,8 @@ export default {
   eng: {
     home: {
       'home-start': 'Hi ! I am',
-      'home-end': 'I am a future Media Engineer aiming to ???',
+      'home-end':
+        'I am a soon-to-be Media Engineer aiming to bring people together through digital experiences.',
     },
     nav: {
       home: 'Home',
