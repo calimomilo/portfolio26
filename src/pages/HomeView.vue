@@ -20,6 +20,7 @@ import SocialsLink from '@/components/SocialsLink.vue';
       <ButtonLink to="/about" trailing-icon="right_arrow">{{ texts.eng.nav.about }}</ButtonLink>
       <ButtonLink to="/projects" trailing-icon="right_arrow">{{ texts.eng.nav.projects }}</ButtonLink>
     </div>
-    <SocialsLink></SocialsLink>
+    
+    <SocialsLink class="absolute inset-x-0 bottom-[20vh] -rotate-4"></SocialsLink>
   </section>
 </template>
