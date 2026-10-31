@@ -1,3 +1,5 @@
-const lang = 'fr'
+import { ref } from 'vue'
 
-export default (path) => path[lang] ?? path
+export const lang = ref('eng')
+
+export const trans = (path) => path[lang.value] ?? path

@@ -2,7 +2,9 @@
 import ButtonLink from '@/components/ButtonLink.vue';
 import SocialsLink from '@/components/SocialsLink.vue';
 import texts from '@/data/texts';
-import trans from '@/composables/useTranslations';
+import { trans } from '@/composables/useTranslations';
+import LangPicker from './LangPicker.vue';
+
 
 const props = defineProps({
     selected: String
@@ -17,7 +19,8 @@ const props = defineProps({
                 <ButtonLink to="/about" trailing-icon="right_arrow" :selected="props.selected === 'about'">{{ trans(texts.about.title) }}</ButtonLink>
                 <ButtonLink to="/projects" trailing-icon="right_arrow" :selected="props.selected === 'projects'">{{ trans(texts.projects.title) }}</ButtonLink>
             </div>
-            <SocialsLink class="absolute min-w-42 bottom-6 -left-8" vertical></SocialsLink>
+            <LangPicker class="mt-8"></LangPicker>
+            <SocialsLink class="absolute w-48 bottom-6 -left-12" vertical></SocialsLink>
         </div>
     </aside>
 </template>

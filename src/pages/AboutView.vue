@@ -1,7 +1,7 @@
 <script setup>
 import texts from '@/data/texts';
 import SideNavLayout from '@/layouts/SideNavLayout.vue';
-import trans from '@/composables/useTranslations'
+import { trans } from '@/composables/useTranslations'
 </script>
 
 <template>

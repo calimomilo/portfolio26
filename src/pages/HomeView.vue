@@ -2,7 +2,8 @@
 import texts from '@/data/texts';
 import ButtonLink from '@/components/ButtonLink.vue';
 import SocialsLink from '@/components/SocialsLink.vue';
-import trans from '@/composables/useTranslations';
+import { trans } from '@/composables/useTranslations';
+import LangPicker from '@/components/LangPicker.vue';
 
 </script>
 
@@ -22,6 +23,7 @@ import trans from '@/composables/useTranslations';
       <ButtonLink to="/projects" trailing-icon="right_arrow" big>{{ trans(texts.projects.title) }}</ButtonLink>
     </div>
     
+    <LangPicker class="absolute right-12 top-12"></LangPicker>
     <SocialsLink class="absolute max-md:inset-x-0 max-md:bottom-[20vh] -rotate-4 md:rotate-0 md:right-12 md:bottom-8"></SocialsLink>
   </section>
 </template>

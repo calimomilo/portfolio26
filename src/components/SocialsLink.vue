@@ -1,7 +1,7 @@
 <script setup>
 import texts from '@/data/texts';
 import IconSwitcher from '@/svgs/IconSwitcher.vue';
-import trans from '@/composables/useTranslations'
+import { trans, lang } from '@/composables/useTranslations'
 
 const props = defineProps({
     vertical: Boolean
@@ -10,7 +10,7 @@ const props = defineProps({
 
 <template>
     <div class="flex justify-center items-center gap-3" :class="{'flex-col gap-20': props.vertical}">
-        <div class="inline relative" :class="{'rotate-90': props.vertical}">
+        <div class="inline relative" :class="{'rotate-90': props.vertical, '-translate-y-3': props.vertical && lang === 'fr'}">
             <p class="inline font-ppmori font-semibold text-base text-neutral-950">{{ trans(texts.socials.cta) }}</p>
             <img src="/assets/socials_arrow.svg" alt="flèche traitillée" class="w-[65px] inline relative left-2 bottom-3">
         </div>
