@@ -15,7 +15,7 @@ export default {
     },
     'home-start': {
       eng: 'Hi ! I am',
-      fr: "Hello, c'est",
+      fr: "Hello, moi c'est",
     },
     'home-end': {
       eng: 'I am a soon-to-be Media Engineer aiming to bring people together through digital experiences.',

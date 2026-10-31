@@ -6,6 +6,6 @@ import { trans } from '@/composables/useTranslations'
 
 <template>
   <SideNavLayout selected="about">
-    <h1 class="font-ppmori text-neutral-950 font-black text-2xl md:text-4xl">{{ trans(texts.about.title) }}</h1>
+    <h1 class="font-ppmori text-neutral-950 font-black text-2xl mb-8 md:text-4xl">{{ trans(texts.about.title) }}</h1>
   </SideNavLayout>
 </template>

@@ -8,7 +8,7 @@ import LangPicker from '@/components/LangPicker.vue';
 </script>
 
 <template>
-  <section class="relative w-screen h-screen overflow-hidden flex flex-col justify-center p-16 gap-12 font-ppmori text-neutral-950 md:flex-row md:gap-4 md:justify-between md:items-center">
+  <section class="relative w-screen h-screen overflow-hidden flex flex-col justify-center p-8 gap-12 font-ppmori text-neutral-950 md:p-16 md:flex-row md:gap-4 md:justify-between md:items-center">
     <img src="/assets/bg_burst.svg" alt="" class="absolute -z-100 mix-blend-multiply max-w-1000 w-240 -right-80 -bottom-30 md:w-440 md:-right-112 md:-bottom-56">
     <h1 class="hidden">Portfolio Camilo Peña-Parra</h1>
 
@@ -18,12 +18,12 @@ import LangPicker from '@/components/LangPicker.vue';
       <p class="text-xl/[130%] -mt-1 md:text-4xl/[130%] md:max-w-150">{{ trans(texts.home['home-end']) }}</p>
     </div>
 
-    <div class="flex flex-col w-fit -ms-2 md:ms-0 md:shrink-0 md:grow-5 md:gap-4">
+    <div class="flex flex-col w-fit ms-4 md:ms-0 md:shrink-0 md:grow-5 md:gap-4">
       <ButtonLink to="/about" trailing-icon="right_arrow" big>{{ trans(texts.about.title) }}</ButtonLink>
       <ButtonLink to="/projects" trailing-icon="right_arrow" big>{{ trans(texts.projects.title) }}</ButtonLink>
     </div>
     
-    <LangPicker class="absolute right-12 top-12"></LangPicker>
-    <SocialsLink class="absolute max-md:inset-x-0 max-md:bottom-[20vh] -rotate-4 md:rotate-0 md:right-12 md:bottom-8"></SocialsLink>
+    <LangPicker class="absolute right-6 top-[3vh] md:right-12 md:top-12"></LangPicker>
+    <SocialsLink class="absolute right-6 bottom-[5vh] md:right-12 md:bottom-8"></SocialsLink>
   </section>
 </template>
