@@ -1,22 +1,37 @@
 export default {
-  eng: {
-    socials: {
-      cta: 'Get in touch !',
-      mail: 'Email',
-      linkedin: 'LinkedIn',
-      github: 'GitHub',
+  socials: {
+    cta: {
+      eng: 'Get in touch !',
+      fr: 'Contactez-moi !',
     },
-    home: {
-      title: 'Home',
-      'home-start': 'Hi ! I am',
-      'home-end':
-        'I am a soon-to-be Media Engineer aiming to bring people together through digital experiences.',
+    mail: 'Email',
+    linkedin: 'LinkedIn',
+    github: 'GitHub',
+  },
+  home: {
+    title: {
+      eng: 'Home',
+      fr: 'Accueil',
     },
-    about: {
-      title: 'About me',
+    'home-start': {
+      eng: 'Hi ! I am',
+      fr: "Hello, c'est",
     },
-    projects: {
-      title: 'My work',
+    'home-end': {
+      eng: 'I am a soon-to-be Media Engineer aiming to bring people together through digital experiences.',
+      fr: 'Je suis un futur ingénieur des médias bla bla bla',
+    },
+  },
+  about: {
+    title: {
+      eng: 'About me',
+      fr: 'À propos',
+    },
+  },
+  projects: {
+    title: {
+      eng: 'My work',
+      fr: 'Réalisations',
     },
   },
 }
