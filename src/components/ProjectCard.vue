@@ -20,7 +20,7 @@ console.log(props.project);
             </HashtagPill>
         </div>
     </article>
-    <article v-else>
-        
+    <article v-else :id="project.slug" class="h-200">
+        <h2 class="grow-3 text-base font-semibold">{{ trans(project.title) }} : {{ trans(project.subtitle) }}</h2>
     </article>
 </template>

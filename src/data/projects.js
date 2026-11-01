@@ -1,5 +1,6 @@
 export default [
   {
+    slug: 'blood-league',
     title: {
       eng: 'Blood League',
       fr: 'Blood League',
@@ -24,6 +25,7 @@ export default [
     images: ['/assets/'],
   },
   {
+    slug: 'housemate',
     title: {
       eng: 'Housemate',
       fr: 'Housemate',
@@ -48,10 +50,8 @@ export default [
     images: ['/assets/'],
   },
   {
-    title: {
-      eng: '"Robustesse" Yearbook',
-      fr: 'Yearbook "Robustesse"',
-    },
+    slug: 'yearbook-2026',
+    title: 'Yearbook 2026',
     subtitle: {
       eng: 'Yearbook concept',
       fr: 'Concept de Yearbook',
@@ -72,6 +72,7 @@ export default [
     images: ['/assets/'],
   },
   {
+    slug: 'soundtrip',
     title: {
       eng: 'SoundTrip',
       fr: 'SoundTrip',
@@ -96,6 +97,7 @@ export default [
     images: ['/assets/'],
   },
   {
+    slug: 'jura',
     title: {
       eng: 'Jura',
       fr: 'Jura',
