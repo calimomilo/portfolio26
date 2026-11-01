@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <aside class="h-screen absolute max-md:bg-white max-md:bg-[url(/public/assets/check_pattern.svg)] max-md:right-0 w-[75vw] md:w-45">
+    <aside class="h-screen absolute max-md:bg-white max-md:bg-[url(/public/assets/check_pattern.svg)] max-md:right-0 max-md:z-3 w-[75vw] md:w-45">
         <div class="relative p-6 size-full bg-primary-100 mix-blend-multiply">
             <ButtonLink to="/" leading-icon="home" big>{{ trans(texts.home.title) }}</ButtonLink>
             <div class="flex flex-col w-fit mt-8">
