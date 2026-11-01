@@ -1,23 +1,46 @@
 <script setup>
 import { onMounted } from 'vue';
 import { ref } from 'vue';
-import projects from '@/data/projects';
-import { trans } from '@/composables/useTranslations';
+
+const props = defineProps({
+    boundary: Number,
+})
+
+const emit = defineEmits(['setActive']);
 
 const smoothScroll = ref(false);
-const limitPosition = 0.4;
 
 onMounted(() => {
-    document.getElementById(projects[0].slug).scrollIntoView();
-    smoothScroll.value = true;
-
     const container = document.getElementById('container');
     const containerTop = container.getBoundingClientRect().top;
     const containerBottom = container.getBoundingClientRect().bottom;
 
-    const activeLimit = (containerBottom - containerTop) * limitPosition + containerTop;
+    const activeLimit = (containerBottom - containerTop) * props.boundary + containerTop;
+    
+    const first = container.firstElementChild;
 
-    const setHeight = document.getElementById(`${projects[0].slug}-after`).getBoundingClientRect().top - document.getElementById(projects[0].slug).getBoundingClientRect().top;
+    const duplicateList = (container) => {
+        const before = [];
+        const after = [];
+
+        for (let element of container.children) {
+            const beforeCopy = element.cloneNode(true);
+            beforeCopy.id = `${element.id}-before`;
+            before.push(beforeCopy);
+
+            const afterCopy = element.cloneNode(true);
+            afterCopy.id = `${element.id}-after`;
+            after.push(afterCopy);
+        };
+
+        before.forEach(el => {
+            container.insertBefore(el, first);
+        })
+
+        after.forEach(el => {
+            container.appendChild(el);
+        })
+    }
 
     const checkActive = (container) => {
         for (let element of container.children) {
@@ -27,8 +50,17 @@ onMounted(() => {
         };
     }
 
-    container.addEventListener('scrollend', () => {
+    duplicateList(container);
+
+    first.scrollIntoView();
+    smoothScroll.value = true;
+
+    const setHeight = document.getElementById(`${first.id}-after`).getBoundingClientRect().top - first.getBoundingClientRect().top;
+
+    container.addEventListener('scroll', () => {
         const active = checkActive(container);
+
+        emit('setActive', active.id);
 
         if (active.id.endsWith('before')) {
             container.scrollBy({top: setHeight, behavior: 'instant'});
@@ -42,15 +74,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div id="container" class="h-150 overflow-scroll scrollbar-none" :class="[smoothScroll? 'scroll-smooth' : 'scroll-none']">
-        <div v-for="project in projects" :key="project.slug" :id="`${project.slug}-before`" class="w-50 h-50 bg-neutral-200 border">
-            <p>{{ trans(project.title) }}</p>
-        </div>
-        <div v-for="project in projects" :key="project.slug" :id="`${project.slug}`" class="w-50 h-50 bg-neutral-200 border">
-            <p>{{ trans(project.title) }}</p>
-        </div>
-        <div v-for="project in projects" :key="project.slug" :id="`${project.slug}-after`" class="w-50 h-50 bg-neutral-200 border">
-            <p>{{ trans(project.title) }}</p>
-        </div>
+    <div id="container" class="overflow-scroll scrollbar-none" :class="[smoothScroll? 'scroll-smooth' : 'scroll-none']">
+        <slot></slot>
     </div>
 </template>
