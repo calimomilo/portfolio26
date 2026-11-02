@@ -30,11 +30,11 @@ const switchViewmode = (view) => {
 
 <template>
   <SideNavLayout selected="projects">
-    <div class="flex items-center justify-between gap-20">
+    <div class="flex flex-col md:items-center md:justify-between md:gap-20 md:flex-row">
       <TitlePage>{{ trans(texts.projects.title) }}</TitlePage>
 
-      <div class="flex items-center bg-white w-fit rotate-2 drop-shadow-sm mb-8">
-        <p class="px-4">{{ trans(texts.projects.view) }}</p>
+      <div class="flex items-center md:bg-white w-fit mb-4 md:rotate-2 md:drop-shadow-sm md:mb-8">
+        <p class="md:px-4">{{ trans(texts.projects.view) }}</p>
         <button class="flex w-11 h-11 justify-center items-center group hover:cursor-pointer" @click="switchViewmode('scroll')">
           <IconSwitcher icon="scroll_view" class="fill-neutral-950 group-hover:fill-primary-900 group-active:fill-primary-700" :class="{'fill-primary-700' : viewMode === 'scroll'}"></IconSwitcher>
         </button>
@@ -48,16 +48,16 @@ const switchViewmode = (view) => {
     </div>
 
     <!-- SCROLL VIEWMODE -->
-    <div v-if="viewMode === 'scroll'" class="grid grid-cols-[140px_40px_1fr_1fr] gap-6">
-      <div class="col-span-1 flex flex-col gap-2 w-30 shrink-0 mt-6">
+    <div v-if="viewMode === 'scroll'" class="grid grid-cols-[120px_1fr] md:grid-cols-[140px_40px_1fr_1fr] gap-6">
+      <div class="col-span-1 flex flex-col gap-2 w-30 shrink-0 md:mt-6">
         <p v-for="project in projects" :key="project.slug" @click="scroll(project)" :class="{'italic font-semibold underline decoration-[0.1em] underline-offset-[0.4em]' : activeProject.slug === project.slug }" class="hover:cursor-pointer hover:italic hover:translate-x-2">{{ trans(project.title) }}</p>
       </div>
-      <div class="col-span-3 grid grid-cols-subgrid">
-        <p class="mt-6">{{ trans(activeProject.year) }}</p>
-        <InfiniteScroll :boundary="0.3" class="h-180 min-w-50 shrink-1" @set-active="setActive">
+      <div class="md:col-span-3 md:grid md:grid-cols-subgrid">
+        <p class="mt-6 max-md:hidden">{{ trans(activeProject.year) }}</p>
+        <InfiniteScroll :boundary="0.3" class="min-w-50 shrink-1 h-[calc(100vh-180px)] md:h-[calc(100vh-120px)]" @set-active="setActive">
           <ProjectCard v-for="project in projects" :key="project.slug" :id="project.slug" :project="project" :viewmode="viewMode"></ProjectCard>
         </InfiniteScroll>
-        <ProjectCard :project="activeProject" viewmode="text" class="shrink-5 grow-1 mt-6 max-w-160 mx-8"></ProjectCard>
+        <ProjectCard :project="activeProject" viewmode="text" class="shrink-5 grow-1 mt-6 max-w-160 mx-8 max-md:hidden"></ProjectCard>
       </div>
     </div>
 
