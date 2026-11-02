@@ -1,9 +1,20 @@
 <script setup>
-// const props = defineProps({
-//     project: String
-// })
+import TitlePage from '@/components/TitlePage.vue';
+import { trans } from '@/composables/useTranslations';
+import projects from '@/data/projects';
+import SideNavLayout from '@/layouts/SideNavLayout.vue';
+
+const props = defineProps({
+    slug: String
+})
+
+const project = projects.find(el => el.slug === props.slug)
+
 </script>
 
 <template>
-  <h1 class="text-neutral-950">Project Detail : {{ $route.params.project }}</h1>
+  <SideNavLayout>
+    <TitlePage>{{ trans(project.title) }}</TitlePage>
+    <h2 class="text-xl italic font-semibold -mt-2">{{ trans(project.subtitle) }}</h2>
+  </SideNavLayout>
 </template>
