@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted } from 'vue';
+import { computed, onMounted } from 'vue';
 import { ref } from 'vue';
 
 const props = defineProps({
@@ -12,10 +12,10 @@ const smoothScroll = ref(false);
 
 onMounted(() => {
     const container = document.getElementById('container');
-    const containerTop = container.getBoundingClientRect().top;
-    const containerBottom = container.getBoundingClientRect().bottom;
+    const containerTop = computed(() => container.getBoundingClientRect().top);
+    const containerBottom = computed(() => container.getBoundingClientRect().bottom);
 
-    const activeLimit = (containerBottom - containerTop) * props.boundary + containerTop;
+    const activeLimit = (containerBottom.value - containerTop.value) * props.boundary + containerTop.value;
     
     const first = container.firstElementChild;
 
@@ -55,7 +55,11 @@ onMounted(() => {
     first.scrollIntoView();
     smoothScroll.value = true;
 
-    const setHeight = document.getElementById(`${first.id}-after`).getBoundingClientRect().top - first.getBoundingClientRect().top;
+    const setHeight = computed(() => {
+        const height = document.getElementById(`${first.id}-after`).getBoundingClientRect().top - first.getBoundingClientRect().top;
+        console.log(height);
+        return height;
+    });
 
     container.addEventListener('scroll', () => {
         const active = checkActive(container);
@@ -63,9 +67,9 @@ onMounted(() => {
         emit('setActive', active.id);
 
         if (active.id.endsWith('before')) {
-            container.scrollBy({top: setHeight, behavior: 'instant'});
+            container.scrollBy({top: setHeight.value, behavior: 'instant'});
         } else if (active.id.endsWith('after')) {
-            container.scrollBy({top: 0 - setHeight, behavior: 'instant'});
+            container.scrollBy({top: 0 - setHeight.value, behavior: 'instant'});
         }
     })
 

@@ -24,8 +24,14 @@ defineProps({
             <h2 class="inline text-base font-semibold">{{ trans(project.title) }} : {{ trans(project.subtitle) }}</h2>
         </div>
     </article>
-    <article v-else-if="viewmode === 'text'" :id="project.slug" class="pb-8">
-        <h2>{{ trans(project.title) }}</h2>
-        <h3>{{ trans(project.subtitle) }} ({{ trans(project.year) }})</h3>
+    <article v-else-if="viewmode === 'text'" :id="project.slug">
+        <h2 class="text-2xl font-semibold">{{ trans(project.title) }}</h2>
+        <h3 class="text-xl italic mb-6">{{ trans(project.subtitle) }}</h3>
+        <p class="text-balanced mb-12">{{ trans(project.short) }}</p>
+        <div class="flex gap-x-2 gap-y-2 flex-wrap">
+            <HashtagPill v-for="(hashtag, i) in trans(project.hashtags)" :key="i">
+                #{{ hashtag }}
+            </HashtagPill>
+        </div>
     </article>
 </template>
