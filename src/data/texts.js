@@ -78,5 +78,9 @@ export default {
       eng: 'My work',
       fr: 'Réalisations',
     },
+    view: {
+      eng: 'View :',
+      fr: 'Vue :',
+    },
   },
 }
