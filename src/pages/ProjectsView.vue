@@ -62,7 +62,7 @@ const switchViewmode = (view) => {
     </div>
 
     <!-- LIST VIEWMODE -->
-    <div v-if="viewMode === 'list'" :class="[viewMode === 'list' ? 'grid grid-cols-[64px_6fr_5fr] gap-x-5 bg-white' : 'max-h-[calc(100%-72px)] overflow-scroll']">
+    <div v-if="viewMode === 'list'" class="grid grid-cols-[64px_6fr_5fr] gap-x-2 bg-white md:gap-x-5">
       <ProjectCard v-for="project in projects" :key="project.slug" :project="project" :viewmode="viewMode"></ProjectCard>
     </div>
   </SideNavLayout>
