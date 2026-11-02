@@ -3,18 +3,18 @@ import IconSwitcher from '@/components/IconSwitcher.vue';
 import InfiniteScroll from '@/components/InfiniteScroll.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import TitlePage from '@/components/TitlePage.vue';
+import { getSessionStorage, setSessionStorage } from '@/composables/useLocalStorage';
 import { trans } from '@/composables/useTranslations';
 import projects from '@/data/projects';
 import texts from '@/data/texts';
 import SideNavLayout from '@/layouts/SideNavLayout.vue';
 import { ref } from 'vue';
 
-const viewMode = ref('scroll');
+const viewMode = ref(getSessionStorage('viewmode', 'scroll'));
 
 const activeProject = ref(projects[0]);
 
 const scroll = (project) =>  {
-  activeProject.value = project;
   document.getElementById(project.slug).scrollIntoView();
 }
 
@@ -23,7 +23,7 @@ const setActive = (active) => {
 }
 
 const switchViewmode = (view) => {
-  viewMode.value = view;
+  viewMode.value = setSessionStorage('viewmode', view);
 }
 
 </script>
@@ -41,9 +41,9 @@ const switchViewmode = (view) => {
         <button class="flex w-11 h-11 justify-center items-center group hover:cursor-pointer" @click="switchViewmode('list')">
           <IconSwitcher icon="list_view" class="fill-neutral-950 group-hover:fill-primary-900 group-active:fill-primary-700" :class="{'fill-primary-700' : viewMode === 'list'}"></IconSwitcher>
         </button>
-        <button class="flex w-11 h-11 justify-center items-center group hover:cursor-pointer" @click="switchViewmode('grid')">
+        <!-- <button class="flex w-11 h-11 justify-center items-center group hover:cursor-pointer" @click="switchViewmode('grid')">
           <IconSwitcher icon="grid_view" class="fill-neutral-950 group-hover:fill-primary-900 group-active:fill-primary-700" :class="{'fill-primary-700' : viewMode === 'grid'}"></IconSwitcher>
-        </button>
+        </button> -->
       </div>
     </div>
 
