@@ -1,6 +1,6 @@
 <script setup>
 import texts from '@/data/texts';
-import IconSwitcher from '@/svgs/IconSwitcher.vue';
+import IconSwitcher from '@/components/IconSwitcher.vue';
 import { trans, lang } from '@/composables/useTranslations'
 
 const props = defineProps({

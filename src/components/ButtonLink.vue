@@ -1,5 +1,5 @@
 <script setup>
-import IconSwitcher from '@/svgs/IconSwitcher.vue';
+import IconSwitcher from '@/components/IconSwitcher.vue';
 import { RouterLink } from 'vue-router';
 import ButtonText from './ButtonText.vue';
 

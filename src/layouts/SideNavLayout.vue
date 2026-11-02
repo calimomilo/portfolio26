@@ -1,6 +1,6 @@
 <script setup>
 import SideNav from '@/components/SideNav.vue';
-import IconSwitcher from '@/svgs/IconSwitcher.vue';
+import IconSwitcher from '@/components/IconSwitcher.vue';
 import { ref } from 'vue';
 
 const props = defineProps({
