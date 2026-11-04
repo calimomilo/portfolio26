@@ -13,7 +13,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <aside class="h-screen absolute max-md:bg-white max-md:bg-[url(/public/assets/check_pattern.svg)] max-md:right-0 max-md:z-3 w-[75vw] md:w-45">
+    <aside class="h-screen absolute selection:bg-accent-1 selection:text-white max-md:bg-white max-md:bg-[url(/public/assets/check_pattern.svg)] max-md:right-0 max-md:z-3 w-[75vw] md:w-45">
         <div class="relative p-6 size-full bg-primary-100 mix-blend-multiply">
             <ButtonLink v-if="back" to="/projects" leading-icon="left_arrow" big>{{ trans(texts.projects.back) }}</ButtonLink>
             <ButtonLink v-else to="/" leading-icon="home" big>{{ trans(texts.home.title) }}</ButtonLink>

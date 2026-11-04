@@ -24,7 +24,7 @@ const toggleNav = () => {
     </button>
     <SideNav :selected="selected" v-if="showNav" class="md:hidden"></SideNav>
     <SideNav :back="back" :selected="selected" class="max-md:hidden"></SideNav>
-    <section class="inline-block h-screen w-screen px-6 pt-16 pb-8 font-ppmori text-base md:ps-60 md:py-11 md:pe-15">
+    <section class="inline-block h-screen w-screen px-6 pt-16 pb-8 font-ppmori selection:bg-accent-1 selection:text-white text-base md:ps-60 md:py-11 md:pe-15">
         <slot></slot>
     </section>
 </template>

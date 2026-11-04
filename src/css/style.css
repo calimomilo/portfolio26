@@ -81,6 +81,8 @@
   --color-mindaro-900: #5b5b1a;
   --color-mindaro-950: #33330b;
 
+  --color-orange-700: #c8421a;
+
   --color-primary-50: var(--color-mindaro-50);
   --color-primary-100: var(--color-mindaro-100);
   --color-primary-200: var(--color-mindaro-200);
@@ -92,6 +94,8 @@
   --color-primary-900: var(--color-mindaro-900);
   --color-primary-800: var(--color-mindaro-800);
   --color-primary-950: var(--color-mindaro-950);
+
+  --color-accent-1: var(--color-orange-700);
 
   --color-neutral-50: #f6f4f0;
   --color-neutral-100: #e9e4d8;

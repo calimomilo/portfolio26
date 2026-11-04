@@ -8,7 +8,7 @@ import LangPicker from '@/components/LangPicker.vue';
 </script>
 
 <template>
-  <section class="relative w-screen h-screen overflow-hidden flex flex-col justify-center p-8 gap-12 font-ppmori text-neutral-950 md:p-16 md:flex-row md:gap-4 md:justify-between md:items-center">
+  <section class="relative w-screen h-screen overflow-hidden flex flex-col justify-center p-8 gap-12 font-ppmori text-neutral-950 selection:bg-accent-1 selection:text-white md:p-16 md:flex-row md:gap-4 md:justify-between md:items-center">
     <img src="/assets/bg_burst.svg" alt="" class="absolute -z-100 mix-blend-multiply max-w-1000 w-240 -right-80 -bottom-30 md:w-440 md:-right-112 md:-bottom-56">
     <h1 class="hidden">Portfolio Camilo Peña-Parra</h1>
 
