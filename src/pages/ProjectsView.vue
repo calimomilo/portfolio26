@@ -50,7 +50,7 @@ const switchViewmode = (view) => {
     <!-- SCROLL VIEWMODE -->
     <div v-if="viewMode === 'scroll'" class="grid grid-cols-[120px_1fr] md:grid-cols-[140px_40px_1fr_1fr] gap-6">
       <div class="col-span-1 flex flex-col gap-2 w-30 shrink-0 md:mt-6">
-        <p v-for="project in projects" :key="project.slug" @click="scroll(project)" :class="{'italic font-semibold underline decoration-[0.1em] underline-offset-[0.4em]' : activeProject.slug === project.slug }" class="hover:cursor-pointer hover:italic hover:translate-x-2">{{ trans(project.title) }}</p>
+        <p v-for="project in projects" :key="project.slug" @click="scroll(project)" :class="{'italic font-semibold underline decoration-[0.1em] underline-offset-[0.4em]' : activeProject.slug === project.slug }" class="transition ease-in-out duration-100 motion-reduce:transition-none hover:cursor-pointer hover:italic hover:translate-x-2">{{ trans(project.title) }}</p>
       </div>
       <div class="md:col-span-3 md:grid md:grid-cols-subgrid">
         <p class="mt-6 max-md:hidden">{{ trans(activeProject.year) }}</p>
