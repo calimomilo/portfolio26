@@ -3,7 +3,8 @@ import SideNav from '@/components/SideNav.vue';
 import IconSwitcher from '@/components/IconSwitcher.vue';
 import { ref } from 'vue';
 
-const props = defineProps({
+defineProps({
+    back: Boolean,
     selected: String
 })
 
@@ -15,11 +16,14 @@ const toggleNav = () => {
 </script>
 
 <template>
-    <button @click="toggleNav()" class="absolute top-4 right-6 md:hidden z-9 w-11 h-11 p-auto">
+    <RouterLink v-if="back" to="/projects" class="absolute top-4 left-6 md:hidden z-9 w-11 h-11 flex items-center">
+        <IconSwitcher icon="left_arrow" class="w-6 h-6 m-auto fill-neutral-950 hover:fill-primary-900 active:fill-primary-700"></IconSwitcher>
+    </RouterLink>
+    <button @click="toggleNav()" class="absolute top-4 right-6 md:hidden z-9 w-11 h-11 appearance-none flex items-center">
         <IconSwitcher :icon="showNav? 'close' : 'menu'" class="w-6 h-6 m-auto fill-neutral-950 hover:fill-primary-900 active:fill-primary-700"></IconSwitcher>
     </button>
-    <SideNav :selected="props.selected" v-if="showNav" class="md:hidden"></SideNav>
-    <SideNav :selected="props.selected" class="max-md:hidden"></SideNav>
+    <SideNav :selected="selected" v-if="showNav" class="md:hidden"></SideNav>
+    <SideNav :back="back" :selected="selected" class="max-md:hidden"></SideNav>
     <section class="inline-block h-screen w-screen px-6 pt-16 pb-8 font-ppmori text-base md:ps-60 md:py-11 md:pe-15">
         <slot></slot>
     </section>

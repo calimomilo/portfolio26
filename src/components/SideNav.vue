@@ -7,6 +7,7 @@ import LangPicker from './LangPicker.vue';
 
 
 const props = defineProps({
+    back: Boolean,
     selected: String
 })
 </script>
@@ -14,7 +15,8 @@ const props = defineProps({
 <template>
     <aside class="h-screen absolute max-md:bg-white max-md:bg-[url(/public/assets/check_pattern.svg)] max-md:right-0 max-md:z-3 w-[75vw] md:w-45">
         <div class="relative p-6 size-full bg-primary-100 mix-blend-multiply">
-            <ButtonLink to="/" leading-icon="home" big>{{ trans(texts.home.title) }}</ButtonLink>
+            <ButtonLink v-if="back" to="/projects" leading-icon="left_arrow" big>{{ trans(texts.projects.back) }}</ButtonLink>
+            <ButtonLink v-else to="/" leading-icon="home" big>{{ trans(texts.home.title) }}</ButtonLink>
             <div class="flex flex-col w-fit mt-8">
                 <ButtonLink to="/about" trailing-icon="right_arrow" :selected="props.selected === 'about'">{{ trans(texts.about.title) }}</ButtonLink>
                 <ButtonLink to="/projects" trailing-icon="right_arrow" :selected="props.selected === 'projects'">{{ trans(texts.projects.title) }}</ButtonLink>

@@ -13,7 +13,7 @@ const project = projects.find(el => el.slug === props.slug)
 </script>
 
 <template>
-  <SideNavLayout>
+  <SideNavLayout back>
     <TitlePage>{{ trans(project.title) }}</TitlePage>
     <h2 class="text-xl italic font-semibold -mt-2">{{ trans(project.subtitle) }}</h2>
   </SideNavLayout>

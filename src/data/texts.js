@@ -74,6 +74,10 @@ export default {
     },
   },
   projects: {
+    back: {
+      eng: 'Back',
+      fr: 'Retour',
+    },
     title: {
       eng: 'My work',
       fr: 'Réalisations',
