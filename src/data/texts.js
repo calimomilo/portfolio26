@@ -86,5 +86,13 @@ export default {
       eng: 'View :',
       fr: 'Vue :',
     },
+    short: {
+      eng: 'In short :',
+      fr: 'En bref :',
+    },
+    detail: {
+      eng: 'In detail :',
+      fr: 'En détail :',
+    },
   },
 }

@@ -3,8 +3,6 @@ import { ref } from 'vue'
 import { getLocalStorage } from '@/composables/useLocalStorage.js'
 
 const mouseDecorationEnabled = ref(getLocalStorage('mouseDecoration', true))
-const bigCursorSize = 10;
-const smallCursorSize = 6;
 
 if (mouseDecorationEnabled.value) {
   document.addEventListener('mousemove', (e) => mouseDecoration(e))
@@ -26,7 +24,7 @@ const mouseDecoration = (e) => {
 
   const cursor = document.getElementById('cursor');
   const cursorStyle = getComputedStyle(e.target).cursor;
-  let cursorSize;
+  const cursorSize = 10;
   
 //   console.log(getComputedStyle(e.target).cursor, getComputedStyle(e.target).cursor === 'auto')
     if(cursorStyle === 'auto') {
@@ -35,9 +33,9 @@ const mouseDecoration = (e) => {
     }
 
     if(cursorStyle === 'pointer') {
-        cursorSize = smallCursorSize;
+        cursor.style.scale = '60%';
     } else {
-        cursorSize = bigCursorSize;
+        cursor.style.scale = '100%';
     }
 
     
@@ -49,5 +47,5 @@ const mouseDecoration = (e) => {
 </script>
 
 <template>
-    <div id="cursor" class="absolute rounded-full backdrop-invert z-99 pointer-events-none"></div>
+    <div id="cursor" class="absolute rounded-full backdrop-invert z-99 pointer-events-none transition ease-in-out duration-100 motion-reduce:transition-none"></div>
 </template>

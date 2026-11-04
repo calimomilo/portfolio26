@@ -87,7 +87,11 @@ export default [
     },
     desc: {
       eng: 'desc',
-      fr: 'desc',
+      fr: [
+        "Imaginé dans le cadre d'un cours à la HEIG-VD, SoundTrip est un podcast de rencontre et d'exploration musicale. Chaque épisode est dédié à un genre musical différent et centré sur un.e artiste invité.e, qui devient notre guide à travers l'univers du style musical qu'iel pratique à sa façon.",
+        "J'ai élaboré l'identité visuelle du podcast, composée d'une vignette principale et d'une série de déclinaisons pour les différents artistes. La vignette est pensée dans l'extension de l'univers du podcast ; elle présente un vinyle, symbole fort de la musique et élément emblématique de SoundTrip. La police de caractères, DT Getai Grotesk, a elle-aussi été choisie spécialement pour ses formes rondes et ses pièges à encre qui rappellent les rainures du vinyle.",
+        "J'ai également créé une série de vignettes déclinées pour chaque épisode, reprenant les éléments clé de la vignette de base, et mettant en avant l'artiste présenté.e. Ceci est fait en collaboration avec l'invité.e, en ajoutant une photo de son choix dans le vinyle et en adaptant la couleur du cadre à son univers.",
+      ],
     },
     hashtags: {
       eng: ['mobile app', 'UI/UX', 'visual identity'],
