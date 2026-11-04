@@ -19,8 +19,8 @@ defineProps({
             </HashtagPill>
         </div>
     </RouterLink>
-    <RouterLink v-else-if="viewmode === 'scroll'" :to="`/projects/${project.slug}`">
-    <article :id="project.slug" class="pb-8">
+    <RouterLink v-else-if="viewmode === 'scroll'" :to="`/projects/${project.slug}`" :id="project.slug">
+    <article class="pb-8">
         <div class="w-full aspect-square bg-white flex justify-center items-center">
             <h2 class="inline text-base font-semibold">{{ trans(project.title) }} : {{ trans(project.subtitle) }}</h2>
         </div>
