@@ -5,6 +5,7 @@ import { trans } from '@/composables/useTranslations';
 import projects from '@/data/projects';
 import texts from '@/data/texts';
 import SideNavLayout from '@/layouts/SideNavLayout.vue';
+import components from '@/composables/importProjects'
 
 const props = defineProps({
     slug: String
@@ -26,6 +27,6 @@ const project = projects.find(el => el.slug === props.slug)
     <h3>{{ trans(texts.projects.short) }}</h3>
     <p>{{ trans(project.short) }}</p>
     <h3>{{ trans(texts.projects.detail) }}</h3>
-    <p v-for="(p, i) in trans(project.desc)" :key="i">{{ p }}</p>
+    <component :is="components[trans(project.slug)]"></component>
   </SideNavLayout>
 </template>

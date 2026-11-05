@@ -47,5 +47,5 @@ const mouseDecoration = (e) => {
 </script>
 
 <template>
-    <div id="cursor" class="absolute rounded-full backdrop-invert z-99 pointer-events-none transition ease-in-out duration-100 motion-reduce:transition-none"></div>
+    <div id="cursor" class="max-md:hidden absolute rounded-full backdrop-invert z-99 pointer-events-none transition ease-in-out duration-100 motion-reduce:transition-none"></div>
 </template>
