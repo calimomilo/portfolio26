@@ -22,8 +22,7 @@ defineProps({
     <RouterLink v-else-if="viewmode === 'scroll'" :to="`/projects/${project.slug}`" :id="project.slug">
     <article class="pb-8">
         <div class="w-full aspect-square bg-white flex justify-center items-center p-4">
-            <img :src="`/photos/${project.images[0].url}`" :alt="project.images[0].alt" class="max-w-full max-h-full text-neutral-950">
-            <!-- <h2 class="inline text-base font-semibold">{{ trans(project.title) }} : {{ trans(project.subtitle) }}</h2> -->
+            <img :src="`/photos/${project.images[0].url}`" :alt="trans(project.images[0].alt)" class="max-w-full max-h-full text-neutral-950">
         </div>
     </article>
     </RouterLink>
