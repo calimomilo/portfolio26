@@ -20,7 +20,7 @@ export default [
     year: 2026,
     images: [
       {
-        url: '/photos/blood-league-1',
+        url: 'blood-league-1',
         alt: 'alt?',
       },
     ],
@@ -46,31 +46,31 @@ export default [
     year: 2026,
     images: [
       {
-        url: '/photos/housemate-1',
+        url: 'housemate-1.png',
         alt: "Écran d'accueil de l'application Housemate",
       },
       {
-        url: '/photos/housemate-2',
+        url: 'housemate-2.png',
         alt: "Écran de la liste de courses communes de l'application Housemate",
       },
       {
-        url: '/photos/housemate-3',
+        url: 'housemate-3.png',
         alt: "Écran des votes en cours de l'application Housemate",
       },
       {
-        url: '/photos/housemate-4',
+        url: 'housemate-4.png',
         alt: "Écran de création d'un vote de l'application Housemate",
       },
       {
-        url: '/photos/housemate-5',
+        url: 'housemate-5.png',
         alt: "Capture d'écran de Figma avec les moodboards pour l'application Housemate",
       },
       {
-        url: '/photos/housemate-6',
+        url: 'housemate-6.png',
         alt: "Capture d'écran de Figma avec le design system pour l'application Housemate",
       },
       {
-        url: '/photos/housemate-7',
+        url: 'housemate-7.png',
         alt: "Écran de sélection d'une maison de l'application Housemate",
       },
     ],
@@ -93,31 +93,31 @@ export default [
     year: 2025,
     images: [
       {
-        url: '/photos/yearbook-1',
+        url: 'yearbook-1.jpg',
         alt: 'Première de couverture du Yearbook 2026',
       },
       {
-        url: '/photos/yearbook-2',
+        url: 'yearbook-2.jpg',
         alt: "Spread de l'extérieur de la couverture du Yearbook 2026",
       },
       {
-        url: '/photos/yearbook-3',
+        url: 'yearbook-3.jpg',
         alt: "Spread de l'intérieur de la couverture du Yearbook 2026",
       },
       {
-        url: '/photos/yearbook-4',
+        url: 'yearbook-4.jpg',
         alt: "Spread de la première page d'un article du Yearbook 2026",
       },
       {
-        url: '/photos/yearbook-5',
+        url: 'yearbook-5.jpg',
         alt: "Spread d'un article du Yearbook 2026 au format horizontal",
       },
       {
-        url: '/photos/yearbook-6',
+        url: 'yearbook-6.jpg',
         alt: "Spread d'un article du Yearbook 2026 avec une image centrale",
       },
       {
-        url: '/photos/yearbook-7',
+        url: 'yearbook-7.jpg',
         alt: "Spread d'un article du Yearbook 2026 avec une illustration conceptuelle",
       },
     ],
@@ -143,27 +143,27 @@ export default [
     year: 2024,
     images: [
       {
-        url: '/photos/soundtrip-1',
+        url: 'soundtrip-1.png',
         alt: "Visualisation de la pochette de SoundTrip pour Don't Kill The Cow sur Spotify",
       },
       {
-        url: '/photos/soundtrip-2',
+        url: 'soundtrip-2.png',
         alt: 'Pochette principal de SoundTrip',
       },
       {
-        url: '/photos/soundtrip-3',
+        url: 'soundtrip-3.png',
         alt: "Déclinaison de la pochette de SoundTrip pour Don't Kill The Cow",
       },
       {
-        url: '/photos/soundtrip-4',
+        url: 'soundtrip-4.png',
         alt: 'Déclinaison de la pochette de SoundTrip pour Omar Rudberg',
       },
       {
-        url: '/photos/soundtrip-5',
+        url: 'soundtrip-5.png',
         alt: 'Déclinaison de la pochette de SoundTrip pour Sigrid',
       },
       {
-        url: '/photos/soundtrip-6',
+        url: 'soundtrip-6.png',
         alt: 'Déclinaison de la pochette de SoundTrip pour Agust D',
       },
     ],
@@ -189,23 +189,23 @@ export default [
     year: 2024,
     images: [
       {
-        url: 'jura-1',
+        url: 'jura-1.jpg',
         alt: 'Page de titre de l\'infographie "Jura"',
       },
       {
-        url: 'jura-2',
+        url: 'jura-2v',
         alt: 'Page sur l\'histoire du Jura de l\'infographie "Jura"',
       },
       {
-        url: 'jura-3',
+        url: 'jura-3.jpg',
         alt: 'Page sur les districts du Jura de l\'infographie "Jura"',
       },
       {
-        url: 'jura-4',
+        url: 'jura-4.jpg',
         alt: 'Page sur la démographie du Jura de l\'infographie "Jura"',
       },
       {
-        url: 'jura-5',
+        url: 'jura-5.jpg',
         alt: 'Page d\'anecdote l\'infographie "Jura"',
       },
     ],

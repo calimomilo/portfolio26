@@ -18,7 +18,7 @@ const project = projects.find(el => el.slug === props.slug)
 <template>
   <SideNavLayout back>
     <TitlePage>{{ trans(project.title) }}</TitlePage>
-    <h2 class="text-xl italic font-semibold -mt-2">{{ trans(project.subtitle) }}</h2>
+    <h2 class="text-xl italic font-semibold -mt-2">{{ trans(project.subtitle) }} . {{ trans(project.year) }}</h2>
     <div class="flex gap-2 flex-wrap">
         <HashtagPill v-for="(hashtag, i) in trans(project.hashtags)" :key="i">
             #{{ hashtag }}
