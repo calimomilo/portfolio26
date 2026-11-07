@@ -56,6 +56,13 @@ export default [
         },
       },
       {
+        url: 'housemate-7.png',
+        alt: {
+          eng: '',
+          fr: "Écran de sélection d'une maison de l'application Housemate",
+        },
+      },
+      {
         url: 'housemate-2.png',
         alt: {
           eng: '',
@@ -88,13 +95,6 @@ export default [
         alt: {
           eng: '',
           fr: "Capture d'écran de Figma avec le design system pour l'application Housemate",
-        },
-      },
-      {
-        url: 'housemate-7.png',
-        alt: {
-          eng: '',
-          fr: "Écran de sélection d'une maison de l'application Housemate",
         },
       },
     ],
