@@ -19,8 +19,8 @@ if (mouseDecorationEnabled.value) {
 // }
 
 const mouseDecoration = (e) => {
-  const posX = e.clientX;
-  const posY = e.clientY;
+  const posX = e.clientX + window.scrollX;
+  const posY = e.clientY + window.scrollY;
 
   const cursor = document.getElementById('cursor');
   const cursorStyle = getComputedStyle(e.target).cursor;
