@@ -30,13 +30,13 @@ const project = projects.find(el => el.slug === props.slug)
     </div>
 
     <div class="flex gap-6 mt-6">
-      <div class="col-span-1">
+      <div>
         <h3>{{ trans(texts.projects.short) }}</h3>
         <p>{{ trans(project.short) }}</p>
         <h3>{{ trans(texts.projects.detail) }}</h3>
         <component :is="components[trans(project.slug)]"></component>
       </div>
-      <ImagePicker :images="project.images" class="col-span-1 w-[calc(100vh-360px)]"></ImagePicker>
+      <ImagePicker :images="project.images" class="w-[calc(100vh-360px)]"></ImagePicker>
     </div>
 
   </SideNavLayout>

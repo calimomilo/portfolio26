@@ -20,10 +20,10 @@ export default [
     year: 2026,
     images: [
       {
-        url: 'blood-league-1',
+        url: 'blood-league-4.png',
         alt: {
-          eng: 'alt ig',
-          fr: 'alt?',
+          eng: "Screenshot of the project's timeline in Jira",
+          fr: "Capture d'écran de la timeline du projet dans Jira",
         },
       },
     ],
@@ -51,49 +51,49 @@ export default [
       {
         url: 'housemate-1.png',
         alt: {
-          eng: '',
+          eng: 'Home screen of the Housemate app',
           fr: "Écran d'accueil de l'application Housemate",
         },
       },
       {
         url: 'housemate-7.png',
         alt: {
-          eng: '',
+          eng: 'House selection screen of the Housemate app',
           fr: "Écran de sélection d'une maison de l'application Housemate",
         },
       },
       {
         url: 'housemate-2.png',
         alt: {
-          eng: '',
+          eng: 'Shared groceries screen of the Housemate app',
           fr: "Écran de la liste de courses communes de l'application Housemate",
         },
       },
       {
         url: 'housemate-3.png',
         alt: {
-          eng: '',
+          eng: 'Ongoing votes screen of the housemate app',
           fr: "Écran des votes en cours de l'application Housemate",
         },
       },
       {
         url: 'housemate-4.png',
         alt: {
-          eng: '',
+          eng: 'New vote screen of the Housemate app',
           fr: "Écran de création d'un vote de l'application Housemate",
         },
       },
       {
         url: 'housemate-5.png',
         alt: {
-          eng: '',
+          eng: 'Screenshot of the moodboards in Figma',
           fr: "Capture d'écran de Figma avec les moodboards pour l'application Housemate",
         },
       },
       {
         url: 'housemate-6.png',
         alt: {
-          eng: '',
+          eng: 'Screenshot of the design system in Figma',
           fr: "Capture d'écran de Figma avec le design system pour l'application Housemate",
         },
       },
@@ -119,50 +119,50 @@ export default [
       {
         url: 'yearbook-1.jpg',
         alt: {
-          eng: '',
+          eng: 'Front cover of the 2026 Yearbook',
           fr: 'Première de couverture du Yearbook 2026',
         },
       },
       {
         url: 'yearbook-2.jpg',
         alt: {
-          eng: '',
-          fr: "Spread de l'extérieur de la couverture du Yearbook 2026",
+          eng: "Spread of the cover's exterior",
+          fr: "Spread de l'extérieur de la couverture",
         },
       },
       {
         url: 'yearbook-3.jpg',
         alt: {
-          eng: '',
-          fr: "Spread de l'intérieur de la couverture du Yearbook 2026",
+          eng: "Spread of the cover's interior",
+          fr: "Spread de l'intérieur de la couverture",
         },
       },
       {
         url: 'yearbook-4.jpg',
         alt: {
-          eng: '',
-          fr: "Spread de la première page d'un article du Yearbook 2026",
+          eng: "Spread of an article's first page",
+          fr: "Spread de la première page d'un article",
         },
       },
       {
         url: 'yearbook-5.jpg',
         alt: {
-          eng: '',
-          fr: "Spread d'un article du Yearbook 2026 au format horizontal",
+          eng: 'Spread of an article in horizontal format',
+          fr: "Spread d'un article au format horizontal",
         },
       },
       {
         url: 'yearbook-6.jpg',
         alt: {
-          eng: '',
-          fr: "Spread d'un article du Yearbook 2026 avec une image centrale",
+          eng: 'Spread of an article with a central image',
+          fr: "Spread d'un article avec une image centrale",
         },
       },
       {
         url: 'yearbook-7.jpg',
         alt: {
-          eng: '',
-          fr: "Spread d'un article du Yearbook 2026 avec une illustration conceptuelle",
+          eng: 'Spread of an article with an illustration concept',
+          fr: "Spread d'un article avec une illustration conceptuelle",
         },
       },
     ],
@@ -190,42 +190,42 @@ export default [
       {
         url: 'soundtrip-1.png',
         alt: {
-          eng: '',
+          eng: "Spotify preview of SoundTrip's cover for Don't Kill The Cow",
           fr: "Visualisation de la pochette de SoundTrip pour Don't Kill The Cow sur Spotify",
         },
       },
       {
         url: 'soundtrip-2.png',
         alt: {
-          eng: '',
+          eng: "SoundTrip's main cover",
           fr: 'Pochette principal de SoundTrip',
         },
       },
       {
         url: 'soundtrip-3.png',
         alt: {
-          eng: '',
+          eng: "Variant of SoundTrip's cover for Don't Kill The Cow",
           fr: "Déclinaison de la pochette de SoundTrip pour Don't Kill The Cow",
         },
       },
       {
         url: 'soundtrip-4.png',
         alt: {
-          eng: '',
+          eng: "Variant of SoundTrip's cover for Omar Rudberg",
           fr: 'Déclinaison de la pochette de SoundTrip pour Omar Rudberg',
         },
       },
       {
         url: 'soundtrip-5.png',
         alt: {
-          eng: '',
+          eng: "Variant of SoundTrip's cover for Sigrid",
           fr: 'Déclinaison de la pochette de SoundTrip pour Sigrid',
         },
       },
       {
         url: 'soundtrip-6.png',
         alt: {
-          eng: '',
+          eng: "Variant of SoundTrip's cover for Agust D",
           fr: 'Déclinaison de la pochette de SoundTrip pour Agust D',
         },
       },
@@ -254,36 +254,36 @@ export default [
       {
         url: 'jura-1.jpg',
         alt: {
-          eng: '',
+          eng: 'Title page of the "Jura" infographic',
           fr: 'Page de titre de l\'infographie "Jura"',
         },
       },
       {
         url: 'jura-2.jpg',
         alt: {
-          eng: '',
-          fr: 'Page sur l\'histoire du Jura de l\'infographie "Jura"',
+          eng: "Infographic page about the Jura's history",
+          fr: "Page sur l'histoire du Jura de l'infographie",
         },
       },
       {
         url: 'jura-3.jpg',
         alt: {
-          eng: '',
-          fr: 'Page sur les districts du Jura de l\'infographie "Jura"',
+          eng: "Infographic page about the Jura's districts",
+          fr: "Page sur les districts du Jura de l'infographie",
         },
       },
       {
         url: 'jura-4.jpg',
         alt: {
-          eng: '',
-          fr: 'Page sur la démographie du Jura de l\'infographie "Jura"',
+          eng: "Infographic page about the Jura's demographic data",
+          fr: "Page sur la démographie du Jura de l'infographie",
         },
       },
       {
         url: 'jura-5.jpg',
         alt: {
-          eng: '',
-          fr: 'Page d\'anecdote l\'infographie "Jura"',
+          eng: 'Infographic page about an anecdote about the Jura',
+          fr: "Page d'anecdote sur le Jura de l'infographie",
         },
       },
     ],
