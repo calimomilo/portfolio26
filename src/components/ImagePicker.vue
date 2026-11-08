@@ -14,7 +14,7 @@ const last = ref(false);
 const setActiveImage = (img, id) => {
     activeImage.value = img;
 
-    last.value = id === props.images.length - 2;
+    last.value = id === props.images.length - 1;
     first.value = id === 0;
 
     // console.log(i, document.getElementById(i));
@@ -51,7 +51,7 @@ const fullScreen = () => {
         <div class="relative w-full aspect-square flex justify-center items-center p-4 mb-6 bg-white">
             <div class="w-full h-full absolute" @click="fullScreen"></div>
             <img :src="`/photos/${activeImage.url}`" :alt="trans(activeImage.alt)" class="max-w-full max-h-full text-neutral-950 drop-shadow-sm">
-            
+
             <button v-if="!first" class="absolute w-11 h-11 flex items-center justify-center top-[48%] -left-3 bg-white drop-shadow-sm md:-left-5 transition ease-in-out duration-100 motion-reduce:transition-none hover:scale-105 active:scale-95" @click="prevImage">
                 <IconSwitcher icon="left_arrow" class="fill-neutral-950"></IconSwitcher>
             </button>
