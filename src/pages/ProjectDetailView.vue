@@ -49,7 +49,7 @@ onMounted(() => {
 
 <template>
   <SideNavLayout back :current-slug="project.slug">
-    <div class="flex flex-col gap-6 md:flex-row md:justify-between md:items-baseline">
+    <div class="flex flex-col md:gap-6 md:flex-row md:justify-between md:items-baseline">
       <TitlePage>{{ trans(project.title) }} : {{ trans(project.subtitle) }}</TitlePage>
       <p>{{ trans(project.year) }}</p>
     </div>
@@ -62,9 +62,9 @@ onMounted(() => {
 
     <div class="flex flex-col gap-6 mt-6 md:flex-row">
       <div>
-        <h3>{{ trans(texts.projects.short) }}</h3>
+        <h3 class="text-base font-semibold italic mt-4 mb-1">{{ trans(texts.projects.short) }}</h3>
         <p>{{ trans(project.short) }}</p>
-        <h3>{{ trans(texts.projects.detail) }}</h3>
+        <h3 class="text-base font-semibold italic mt-4 mb-1">{{ trans(texts.projects.detail) }}</h3>
         <component :is="components[trans(project.slug)]"></component>
       </div>
       <ImagePicker id="image_picker" :images="project.images" class="mb-11 md:mb-0"></ImagePicker>

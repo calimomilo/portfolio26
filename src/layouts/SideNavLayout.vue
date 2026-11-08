@@ -23,6 +23,7 @@ const toggleNav = () => {
     <button @click="toggleNav()" class="absolute top-4 right-6 md:hidden z-9 w-11 h-11 appearance-none flex items-center">
         <IconSwitcher :icon="showNav? 'close' : 'menu'" class="w-6 h-6 m-auto fill-neutral-950 hover:fill-primary-900 active:fill-primary-700"></IconSwitcher>
     </button>
+    <!-- <div v-if="showNav" class="absolute top-0 left-0 w-screen h-screen md:hidden bg-neutral-200/40 z-2"></div> -->
     <SideNav :selected="selected" v-if="showNav" class="md:hidden"></SideNav>
     <SideNav :back="back" :current-slug="currentSlug" :selected="selected" class="max-md:hidden"></SideNav>
     <section class="inline-block h-screen w-screen px-6 pt-16 pb-8 font-ppmori selection:bg-accent-1 selection:text-white text-base md:ps-60 md:py-11 md:pe-15">

@@ -19,13 +19,15 @@ defineProps({
             </HashtagPill>
         </div>
     </RouterLink>
+
     <RouterLink v-else-if="viewmode === 'scroll'" :to="`/projects/${project.slug}`" :id="project.slug">
     <article class="pb-8">
         <div class="w-full aspect-square bg-white flex justify-center items-center p-4">
-            <img :src="`/photos/${project.images[0].url}`" :alt="trans(project.images[0].alt)" class="max-w-full max-h-full text-neutral-950">
+            <img :src="`/photos/${project.images[0].url}`" :alt="trans(project.images[0].alt)" class="max-w-full max-h-full text-neutral-950 drop-shadow-sm">
         </div>
     </article>
     </RouterLink>
+
     <article v-else-if="viewmode === 'text'" :id="project.slug">
         <h2 class="text-2xl font-semibold">{{ trans(project.title) }}</h2>
         <h3 class="text-xl italic mb-6">{{ trans(project.subtitle) }}</h3>

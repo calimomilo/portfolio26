@@ -29,8 +29,8 @@ export default {
     },
     background: {
       title: {
-        eng: 'My background',
-        fr: 'Mon parcours',
+        eng: 'Education',
+        fr: 'Formation',
       },
     },
     ai: {
@@ -66,11 +66,13 @@ export default {
         eng: 'The Name of The Wind',
         fr: 'Le Nom du Vent',
       },
+      'book-url': 'the-name-of-the-wind-patrick-rothfuss-666x1024.jpg',
       film: 'Film',
       'film-title': {
         eng: 'Project Hail Mary',
         fr: 'Projet Dernière Chance',
       },
+      'film-url': 'project-hail-mary-poster.avif',
     },
   },
   projects: {

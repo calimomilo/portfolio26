@@ -55,7 +55,7 @@ export default [
         },
       },
       {
-        url: 'blood-league-4.png',
+        url: 'blood-league-6.png',
         alt: {
           eng: "Screenshot of the project's daily tracking in FigJam",
           fr: "Capture d'écran du suivi journalier dans FigJam",
