@@ -63,14 +63,19 @@ onMounted(() => {
 
     container.addEventListener('scroll', () => {
         const active = checkActive(container);
-
-        emit('setActive', active.id);
+        let slug = active.id;
 
         if (active.id.endsWith('before')) {
             container.scrollBy({top: setHeight.value, behavior: 'instant'});
+            slug = active.id.slice(0, -7)
         } else if (active.id.endsWith('after')) {
             container.scrollBy({top: 0 - setHeight.value, behavior: 'instant'});
+            slug = active.id.slice(0, -6)
         }
+        
+        console.log(slug);
+        emit('setActive', slug);
+
     })
 
 })
