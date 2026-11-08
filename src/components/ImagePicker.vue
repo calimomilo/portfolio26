@@ -54,7 +54,7 @@ const fullScreen = () => {
                 <IconSwitcher icon="left_arrow" class="fill-neutral-950"></IconSwitcher>
             </button>
             
-            <img :src="`/photos/${activeImage.url}`" :alt="trans(activeImage.alt)" class="max-w-full max-h-full text-neutral-950">
+            <img :src="`/photos/${activeImage.url}`" :alt="trans(activeImage.alt)" class="max-w-full max-h-full text-neutral-950 drop-shadow-sm">
 
             <button v-if="!last" class="absolute w-11 h-11 flex items-center justify-center top-[48%] -right-3 bg-white drop-shadow-sm md:-right-5 transition ease-in-out duration-100 motion-reduce:transition-none hover:scale-105 active:scale-95" @click="nextImage">
                 <IconSwitcher icon="right_arrow" class="fill-neutral-950"></IconSwitcher>
@@ -65,7 +65,7 @@ const fullScreen = () => {
             <div class="flex h-40 gap-3">
                 <div v-for="(image, i) in images" :key="i" :id="i" class="aspect-square flex justify-center items-center p-4" 
                 :class="[activeImage.url === image.url ? 'bg-neutral-950' : 'bg-white']" @click="setActiveImage(image, i)">
-                    <img :src="`/photos/${image.url}`" :alt="trans(image.alt)" class="max-w-full max-h-full text-neutral-950">
+                    <img :src="`/photos/${image.url}`" :alt="trans(image.alt)" class="max-w-full max-h-full text-neutral-950 drop-shadow-xs">
                 </div>
             </div>
         </div>

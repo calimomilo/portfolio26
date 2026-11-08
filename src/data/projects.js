@@ -20,10 +20,45 @@ export default [
     year: 2026,
     images: [
       {
+        url: 'blood-league-1.png',
+        alt: {
+          eng: "Homepage of the Blood League's main website",
+          fr: "Page d'accueil du site principal de la Blood League",
+        },
+      },
+      {
+        url: 'blood-league-2.png',
+        alt: {
+          eng: 'Dashboard for the Blood League admins',
+          fr: 'Dashboard pour les administrateurs de la Blood League',
+        },
+      },
+      {
+        url: 'blood-league-3.png',
+        alt: {
+          eng: "The Blood League's blood donation eligibility checker",
+          fr: "Checker d'éligibilité au don du sang de la Blood League",
+        },
+      },
+      {
         url: 'blood-league-4.png',
         alt: {
           eng: "Screenshot of the project's timeline in Jira",
           fr: "Capture d'écran de la timeline du projet dans Jira",
+        },
+      },
+      {
+        url: 'blood-league-5.png',
+        alt: {
+          eng: "Screenshot of the project's daily tracking in FigJam",
+          fr: "Capture d'écran du suivi journalier dans FigJam",
+        },
+      },
+      {
+        url: 'blood-league-4.png',
+        alt: {
+          eng: "Screenshot of the project's daily tracking in FigJam",
+          fr: "Capture d'écran du suivi journalier dans FigJam",
         },
       },
     ],
