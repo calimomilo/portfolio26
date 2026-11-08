@@ -11,37 +11,32 @@ const activeImage = ref(props.images[0])
 const first = ref(true);
 const last = ref(false);
 
-const setActiveImage = (img, i) => {
+const setActiveImage = (img, id) => {
     activeImage.value = img;
-    
+
+    last.value = id === props.images.length - 2;
+    first.value = id === 0;
+
     // console.log(i, document.getElementById(i));
-    document.getElementById(i).scrollIntoView();
+    document.getElementById(id).scrollIntoView();
 }
 
 const nextImage = () => {
     const currentId = props.images.findIndex(e => e.url === activeImage.value.url);
+    const newId = currentId + 1;
 
-    if (currentId < props.images.length - 1) {
+    if (newId < props.images.length) {
         setActiveImage(props.images[currentId+1], currentId+1);
-        first.value = false;
-
-        if (currentId === props.images.length - 2) {
-            last.value = true;
-        }
     }
     // console.log('next', currentId, first.value, last.value)
 }
 
 const prevImage = () => {
     const currentId = props.images.findIndex(e => e.url === activeImage.value.url);
+    const newId = currentId - 1;
 
-    if (currentId > 0) {
+    if (newId >= 0) {
         setActiveImage(props.images[currentId-1], currentId-1);
-        last.value = false;
-        
-        if (currentId === 1) {
-            first.value = true;
-        }
     }
     // console.log('prev', currentId, first.value, last.value)
 }
@@ -55,13 +50,13 @@ const fullScreen = () => {
     <div>
         <div class="relative w-full aspect-square flex justify-center items-center p-4 mb-6 bg-white">
             <div class="w-full h-full absolute" @click="fullScreen"></div>
-            <button v-if="!first" class="absolute w-11 h-11 flex items-center justify-center top-[48%] -left-3 bg-white drop-shadow-sm md:-left-5" @click="prevImage">
+            <button v-if="!first" class="absolute w-11 h-11 flex items-center justify-center top-[48%] -left-3 bg-white drop-shadow-sm md:-left-5 transition ease-in-out duration-100 motion-reduce:transition-none hover:scale-105 active:scale-95" @click="prevImage">
                 <IconSwitcher icon="left_arrow" class="fill-neutral-950"></IconSwitcher>
             </button>
             
             <img :src="`/photos/${activeImage.url}`" :alt="trans(activeImage.alt)" class="max-w-full max-h-full text-neutral-950">
 
-            <button v-if="!last" class="absolute w-11 h-11 flex items-center justify-center top-[48%] -right-3 bg-white drop-shadow-sm md:-right-5" @click="nextImage">
+            <button v-if="!last" class="absolute w-11 h-11 flex items-center justify-center top-[48%] -right-3 bg-white drop-shadow-sm md:-right-5 transition ease-in-out duration-100 motion-reduce:transition-none hover:scale-105 active:scale-95" @click="nextImage">
                 <IconSwitcher icon="right_arrow" class="fill-neutral-950"></IconSwitcher>
             </button>
         </div>

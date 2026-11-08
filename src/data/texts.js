@@ -39,8 +39,8 @@ export default {
         fr: "Et l'IA ?",
       },
       text: {
-        eng: "I personally don't use generative AI at any step of my process ! Everything I work on is imagined, designed, and implemented consciously and with care.",
-        fr: "Je n'utilise personnellement pas l'IA générative à aucune étape de mon processus ! Tout ce sur quoi je travaille est imaginé, conçu, et implémenté de manière intentionnelle et avec soin.",
+        eng: "I personally don't use generative AI at any step of my process. Everything I work on is imagined, designed, and implemented consciously and with care :)",
+        fr: "Je n'utilise personnellement pas l'IA générative à aucune étape de mon processus ! Tout ce sur quoi je travaille est imaginé, conçu, et implémenté de manière intentionnelle et avec soin :)",
       },
     },
     after: {
@@ -77,6 +77,14 @@ export default {
     back: {
       eng: 'Back',
       fr: 'Retour',
+    },
+    next: {
+      eng: 'Next',
+      fr: 'Suivant',
+    },
+    prev: {
+      eng: 'Previous',
+      fr: 'Précédent',
     },
     title: {
       eng: 'My work',

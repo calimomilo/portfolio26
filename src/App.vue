@@ -6,7 +6,7 @@ import CursorDecoration from './components/CursorDecoration.vue';
 
 <template>
   <CursorDecoration></CursorDecoration>
-  <RouterView></RouterView>
+  <RouterView :key="$route.fullPath"></RouterView>
 </template>
 
 <style scoped></style>

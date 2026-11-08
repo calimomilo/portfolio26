@@ -48,7 +48,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <SideNavLayout back>
+  <SideNavLayout back :current-slug="project.slug">
     <div class="flex flex-col gap-6 md:flex-row md:justify-between md:items-baseline">
       <TitlePage>{{ trans(project.title) }} : {{ trans(project.subtitle) }}</TitlePage>
       <p>{{ trans(project.year) }}</p>

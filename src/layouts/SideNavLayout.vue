@@ -5,7 +5,8 @@ import { ref } from 'vue';
 
 defineProps({
     back: Boolean,
-    selected: String
+    selected: String,
+    currentSlug: String
 })
 
 const showNav = ref(false);
@@ -23,7 +24,7 @@ const toggleNav = () => {
         <IconSwitcher :icon="showNav? 'close' : 'menu'" class="w-6 h-6 m-auto fill-neutral-950 hover:fill-primary-900 active:fill-primary-700"></IconSwitcher>
     </button>
     <SideNav :selected="selected" v-if="showNav" class="md:hidden"></SideNav>
-    <SideNav :back="back" :selected="selected" class="max-md:hidden"></SideNav>
+    <SideNav :back="back" :current-slug="currentSlug" :selected="selected" class="max-md:hidden"></SideNav>
     <section class="inline-block h-screen w-screen px-6 pt-16 pb-8 font-ppmori selection:bg-accent-1 selection:text-white text-base md:ps-60 md:py-11 md:pe-15">
         <slot></slot>
     </section>

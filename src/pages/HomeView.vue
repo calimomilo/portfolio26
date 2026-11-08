@@ -19,8 +19,8 @@ import LangPicker from '@/components/LangPicker.vue';
     </div>
 
     <div class="flex flex-col w-fit ms-4 md:ms-0 md:shrink-0 md:grow-5 md:gap-4">
-      <ButtonLink to="/about" trailing-icon="right_arrow" big>{{ trans(texts.about.title) }}</ButtonLink>
       <ButtonLink to="/projects" trailing-icon="right_arrow" big>{{ trans(texts.projects.title) }}</ButtonLink>
+      <ButtonLink to="/about" trailing-icon="right_arrow" big>{{ trans(texts.about.title) }}</ButtonLink>
     </div>
     
     <LangPicker class="absolute right-6 top-[3vh] md:right-12 md:top-12"></LangPicker>

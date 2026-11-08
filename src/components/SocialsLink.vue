@@ -15,13 +15,13 @@ const props = defineProps({
             <img src="/assets/socials_arrow.svg" alt="flèche traitillée" class="w-[65px] inline relative left-2 bottom-3">
         </div>
         <div class="inline-flex w-fit" :class="{'flex-col': props.vertical}">
-            <a href="">
+            <a href="https://www.linkedin.com/in/camilo-pena-parra/" target="_blank">
                 <IconSwitcher icon="linkedin" class="w-11 h-11 fill-neutral-950 hover:cursor-pointer hover:fill-primary-900 active:fill-primary-700"></IconSwitcher>
             </a>
             <a href="">
                 <IconSwitcher icon="email" class="w-11 h-11 fill-neutral-950 hover:cursor-pointer hover:fill-primary-900 active:fill-primary-700"></IconSwitcher>
             </a>
-            <a href="">
+            <a href="https://github.com/calimomilo" target="_blank">
                 <IconSwitcher icon="github" class="w-11 h-11 fill-neutral-950 hover:cursor-pointer hover:fill-primary-900 active:fill-primary-700"></IconSwitcher>
             </a>
         </div>
