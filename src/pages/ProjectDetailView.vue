@@ -65,7 +65,7 @@ onMounted(() => {
         <h3 class="text-base font-semibold italic mt-4 mb-1">{{ trans(texts.projects.short) }}</h3>
         <p>{{ trans(project.short) }}</p>
         <h3 class="text-base font-semibold italic mt-4 mb-1">{{ trans(texts.projects.detail) }}</h3>
-        <component :is="components[trans(project.slug)]"></component>
+        <component :is="components[trans(project.slug)]" :project="project"></component>
       </div>
       <ImagePicker id="image_picker" :images="project.images" class="mb-11 md:mb-0"></ImagePicker>
     </div>

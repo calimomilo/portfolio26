@@ -18,8 +18,8 @@ export default {
       fr: "Hello, moi c'est",
     },
     'home-end': {
-      eng: 'I am a soon-to-be Media Engineer aiming to bring people together through digital experiences.',
-      fr: 'Je suis un futur ingénieur des médias bla bla bla',
+      eng: 'soon-to-be Media Engineer.',
+      fr: 'futur ingénieur des médias.',
     },
   },
   about: {
@@ -32,6 +32,74 @@ export default {
         eng: 'Education',
         fr: 'Formation',
       },
+      list: [
+        {
+          date: '2024-2027',
+          el: {
+            eng: 'Bachelor in Media Engineering',
+            fr: 'Bachelor en Ingénierie des Médias',
+          },
+        },
+        {
+          date: '2023-2024',
+          el: {
+            eng: 'Practical experience bridge in Computer Science',
+            fr: 'Passerelle pratique en Informatique',
+          },
+        },
+        {
+          date: '2018-2021',
+          el: {
+            eng: 'Baccalaureate',
+            fr: 'Maturité gymnasiale',
+          },
+        },
+      ],
+    },
+    skills: {
+      title: {
+        eng: 'Skills',
+        fr: 'Compétences',
+      },
+      list: [
+        {
+          cat: {
+            eng: 'Programming',
+            fr: 'Programmation',
+          },
+          list: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Java', 'C++'],
+        },
+        {
+          cat: {
+            eng: 'Development',
+            fr: 'Développement',
+          },
+          list: [
+            'Git',
+            'MySQL',
+            'MariaDB',
+            'SQLite',
+            'Postgres',
+            'Vue.js',
+            'Laravel',
+            'Inertia',
+            'Tailwind CSS',
+          ],
+        },
+        {
+          cat: 'Design',
+          list: [
+            'Illustrator',
+            'Photoshop',
+            'InDesign',
+            'PremierePro',
+            'Figma',
+            'Canva',
+            'Affinity',
+            'DaVinci Resolve',
+          ],
+        },
+      ],
     },
     ai: {
       title: {

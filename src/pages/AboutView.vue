@@ -4,6 +4,16 @@ import SideNavLayout from '@/layouts/SideNavLayout.vue';
 import { trans } from '@/composables/useTranslations'
 import TitlePage from '@/components/TitlePage.vue';
 import TitleChapter from '@/components/TitleChapter.vue';
+
+const toList = (arr) => {
+  let str = '';
+  arr.forEach(element => {
+    str += element;
+    str += ', ';
+  });
+
+  return str.slice(0, -2);
+}
 </script>
 
 <template>
@@ -11,27 +21,43 @@ import TitleChapter from '@/components/TitleChapter.vue';
     <TitlePage>{{ trans(texts.about.title) }}</TitlePage>
     <img src="/assets/photo_camilo.png" alt="Photo de Camilo" class="max-md:hidden h-99 fixed bottom-0 left-28 drop-shadow-lg drop-shadow-neutral-950/30 z-1">
     <div>
+      <TitleChapter>{{ trans(texts.about.background.title) }}</TitleChapter>
+      <ul class="list-disc list-inside">
+        <li v-for="(element, i) in texts.about.background.list" :key="i">
+          <span class="font-semibold">{{ trans(element.date) }} :</span> {{ trans(element.el) }}</li>
+      </ul>
+    </div>
+
+    <div>
+      <TitleChapter>{{ trans(texts.about.skills.title) }}</TitleChapter>
+      <ul class="list-disc list-inside">
+        <li v-for="(element, i) in texts.about.skills.list" :key="i">
+          <span class="font-semibold">{{ trans(element.cat) }} :</span> {{ toList(element.list) }}</li>
+      </ul>
+    </div>
+
+    <div>
       <TitleChapter>{{ trans(texts.about.ai.title) }}</TitleChapter>
       <p>{{ trans(texts.about.ai.text) }}</p>
     </div>
-    <div>
+
+    <!-- <div>
       <TitleChapter>{{ trans(texts.about.after.title) }}</TitleChapter>
       <p>{{ trans(texts.about.after.text) }}</p>
-    </div>
-    <div>
+    </div> -->
+
+    <div class="relative md:translate-x-20">
       <TitleChapter>{{ trans(texts.about['know-me'].title) }}</TitleChapter>
-      <div class="flex gap-2 md:gap-8">
-        <ul>
-          <li>
-            {{ trans(texts.about['know-me'].book) }} : {{ trans(texts.about['know-me']['book-title']) }} (Patrick Rothfuss)
-            <img :src="`/assets/${texts.about['know-me']['book-url']}`" :alt="trans(texts.about['know-me']['book-title'])">
-          </li>
-          <li>
-            {{ trans(texts.about['know-me'].film) }} : {{ trans(texts.about['know-me']['film-title']) }} (2026)
-            <img :src="`/assets/${texts.about['know-me']['film-url']}`" :alt="trans(texts.about['know-me']['film-title'])">
-          </li>
-        </ul>
-      </div>
+      <ul class="list-disc list-inside">
+        <li>
+          {{ trans(texts.about['know-me'].book) }} : {{ trans(texts.about['know-me']['book-title']) }} (Patrick Rothfuss)
+          <img :src="`/assets/${texts.about['know-me']['book-url']}`" :alt="trans(texts.about['know-me']['book-title'])" class="inline-block h-40 absolute max-md:top-24 left-8 md:hidden md:left-84">
+        </li>
+        <li>
+          {{ trans(texts.about['know-me'].film) }} : {{ trans(texts.about['know-me']['film-title']) }} (2026)
+          <img :src="`/assets/${texts.about['know-me']['film-url']}`" :alt="trans(texts.about['know-me']['film-title'])" class="inline-block h-40 absolute max-md:top-24 left-48 md:hidden md:left-132">
+        </li>
+      </ul>
     </div>
   </SideNavLayout>
 </template>

@@ -1,3 +1,15 @@
+<script setup>
+import { trans } from '@/composables/useTranslations';
+
+const props = defineProps({
+    project: Object
+})
+
+const project = props.project ?? {};
+// console.log(props.project, project)
+
+</script>
+
 <template>
-    <p>test test JU</p>
+    <p class="mb-3">{{ trans(project.detail.p1) }}</p>
 </template>

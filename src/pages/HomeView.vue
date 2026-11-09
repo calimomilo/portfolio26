@@ -14,7 +14,7 @@ import LangPicker from '@/components/LangPicker.vue';
 
     <div class="max-md:hidden md:grow-3"></div>
     <div class="flex flex-col md:justify-self-end md:grow-1">
-      <p class="text-3xl md:text-5xl">{{ trans(texts.home['home-start']) }} <span class="sr-only">Camilo</span><img src="/assets/camilo.svg" alt="Camilo" class="inline h-8 px-1 mb-3 md:h-12 md:mb-5">.</p>
+      <p class="text-3xl md:text-5xl">{{ trans(texts.home['home-start']) }} <span class="sr-only">Camilo</span><img src="/assets/camilo.svg" alt="Camilo" class="inline h-8 px-1 mb-3 md:h-12 md:mb-5">,</p>
       <p class="text-xl/[130%] -mt-1 md:text-4xl/[130%] md:max-w-150">{{ trans(texts.home['home-end']) }}</p>
     </div>
 
