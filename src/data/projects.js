@@ -10,7 +10,7 @@ export default [
       fr: 'Dynamiser le don du sang en entreprise',
     },
     short: {
-      eng: 'The Blood League is the result of a project carried out for the Geneva University Hospitals. It transforms corporate blood drives into a positive sporting competition in order to revitalise this type of blood drive, promote partner companies, and reduce the number of registrations from ineligible people.',
+      eng: 'The Blood League is the result of a project carried out for the Geneva University Hospitals. It transforms corporate blood drives into a positive sporting competition in order to revitalise this type of blood drives, promote partner companies, and reduce the number of registrations from ineligible people.',
       fr: "La Blood League est le résultat d'un projet réalisé pour les Hôpitaux Universitaires de Genève. Elle transforme les collectes de sang en entreprise en une compétition sportive positive afin de redynamiser ce type de collecte, valoriser les entreprises partenaires, et réduire le nombre d'inscriptions de personnes non-éligibles.",
     },
     hashtags: {
@@ -19,16 +19,30 @@ export default [
     },
     detail: {
       p1: {
-        eng: '',
-        fr: '',
+        eng: 'This work was carried out as part of an integration project at HEIG-VD in collaboration with the Geneva University Hospitals and their Blood Transfusion Center. Our mission was to revitalise corporate blood drives, promote partner companies, and reduce the number of registrations from ineligible people.',
+        fr: "Ce travail a été réalisé dans le cadre d'un projet d'intégration à la HEIG-VD en collaboration avec les Hôpitaux universitaires de Genève et leur Centre de transfusion sanguine. Notre mission était de dynamiser les collectes de sang en entreprise, valoriser les entreprises partenaires, et réduire le nombre d'inscriptions de personnes non-éligibles.",
       },
-      p1: {
-        eng: '',
-        fr: '',
+      p2: {
+        eng: 'The project was carried out with a team of six people. I handled the technical aspects, starting with data and interaction modeling, back-end and front-end development, and deploying the project to production. As part of this, I was able to explore the Inertia.js library, which improves performance when bridging Laravel and Vue.js.',
+        fr: "Le projet a été mené en équipe de 6 personnes. Je me suis occupé des aspects techniques, en commençant par la modélisation des données et des interactions, le développement back-end et front-end, et la mise en production du projet. J'ai pour cela pu découvrir la librairie Inertia.js, qui permet d'améliorer les performances au moment de faire le pont entre Laravel et Vue.js. ",
       },
-      p1: {
-        eng: '',
-        fr: '',
+      p3: {
+        eng: 'We also used agile project management, for which I took on the additional role of Scrum Master. I ensured that the backlog was kept up to date in Jira and that team members were progressing smoothly through daily tracking on FigJam and Scrum ceremonies.',
+        fr: "Nous avons également fait de la gestion de projet agile, pour laquelle j'ai pris le rôle additionnel de Scrum Master. Je me suis assuré de la mise à jour du backlog avec Jira, ainsi que du bon avancement des différents membres de l'équipe grâce à un suivi journalier sur FigJam et des cérémonies Scrum.",
+      },
+      l1: {
+        url: 'https://blood-league.ch/',
+        text: {
+          eng: "Blood League's website",
+          fr: 'Site web de la Blood League',
+        },
+      },
+      l2: {
+        url: 'https://github.com/calimomilo/baobab-x-hug',
+        text: {
+          eng: "Project's Github repository",
+          fr: 'Repo Github du projet',
+        },
       },
     },
     year: 2026,
