@@ -4,6 +4,7 @@ import SideNavLayout from '@/layouts/SideNavLayout.vue';
 import { trans } from '@/composables/useTranslations'
 import TitlePage from '@/components/TitlePage.vue';
 import TitleChapter from '@/components/TitleChapter.vue';
+import { onMounted } from 'vue';
 
 const toList = (arr) => {
   let str = '';
@@ -14,12 +15,51 @@ const toList = (arr) => {
 
   return str.slice(0, -2);
 }
+
+onMounted(() => {
+
+  const avoidPortrait = (element) => {
+    if (window.innerWidth >= 768) {
+      const portrait = document.getElementById('portrait');
+      const portraitTop = portrait.getBoundingClientRect().top;
+      const portraitH = portrait.getBoundingClientRect().height;
+      const cutoff = portraitH * 0.26 + portraitTop;
+      // console.log(portraitTop, portraitH, cutoff);
+
+      const elBottom = element.getBoundingClientRect().bottom;
+
+      if (elBottom > portraitTop - 12) {
+        element.style.marginLeft = elBottom < cutoff? '80px' : '180px';
+      }
+    
+    // console.log(element, elBottom, portraitTop, cutoff);
+    }
+  }
+
+  const transList = document.getElementsByClassName('check-trans');
+
+  for(let el of transList) {
+    avoidPortrait(el);
+  };
+
+  window.addEventListener('scroll', () => {
+    for(let el of transList) {
+      avoidPortrait(el);
+    };
+  });
+  window.addEventListener('resize', () => {
+    for(let el of transList) {
+      avoidPortrait(el);
+    };
+  });
+  // console.log(transList);
+})
 </script>
 
 <template>
   <SideNavLayout selected="about">
     <TitlePage>{{ trans(texts.about.title) }}</TitlePage>
-    <img src="/assets/photo_camilo.png" alt="Photo de Camilo" class="max-md:hidden h-99 fixed bottom-0 left-28 drop-shadow-lg drop-shadow-neutral-950/30 z-1">
+    <img id="portrait" src="/assets/photo_camilo.png" alt="Photo de Camilo" class="max-md:hidden h-95 fixed bottom-0 left-28 drop-shadow-lg drop-shadow-neutral-950/30 z-1">
     <div>
       <TitleChapter>{{ trans(texts.about.background.title) }}</TitleChapter>
       <ul class="list-disc list-inside">
@@ -36,7 +76,7 @@ const toList = (arr) => {
       </ul>
     </div>
 
-    <div>
+    <div class="check-trans">
       <TitleChapter>{{ trans(texts.about.ai.title) }}</TitleChapter>
       <p>{{ trans(texts.about.ai.text) }}</p>
     </div>
@@ -46,7 +86,7 @@ const toList = (arr) => {
       <p>{{ trans(texts.about.after.text) }}</p>
     </div> -->
 
-    <div class="relative md:translate-x-20">
+    <div class="check-trans relative">
       <TitleChapter>{{ trans(texts.about['know-me'].title) }}</TitleChapter>
       <ul class="list-disc list-inside">
         <li>
